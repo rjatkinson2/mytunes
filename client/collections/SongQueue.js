@@ -2,7 +2,7 @@
 var SongQueue = Songs.extend({
 
   playFirst: function(){
-    this.at(0).dequeue();
+    this.at(0).specplay();
   },
 
   initialize: function(){

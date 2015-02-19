@@ -13,7 +13,7 @@ var PlayerView = Backbone.View.extend({
     this.model = song;
     this.render();
     if(song !== ''){
-      this.el.addEventListener('ended',this.model.ended.bind(this.model));
+      $(this.el).on('ended',this.model.ended.bind(this.model));
     }
   },
 
